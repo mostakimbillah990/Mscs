@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MOSTAKIM BILLAH</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  
+  <style>
+    body {
+      font-family: 'Hind Siliguri', sans-serif;
+      background-color: #2c3e50;
+      color: #ecf0f1;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: linear-gradient(135deg, #2980b9, #2ecc71);
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    }
+    .banner {
+      max-height: 250px; /* ব্যানারের উচ্চতা */
+      overflow: hidden;
+    }
+    .banner img {
+      width: 100%;
+      height: auto;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 10px;
+    }
+    nav a {
+      font-family: 'Poppins', sans-serif;
+      color: #f1c40f;
+      margin: 0 15px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    nav a:hover {
+      color: #e74c3c;
+    }
+   
+    /* মূল কনটেন্ট ঠিক করার জন্য padding-top বাড়ানো হয়েছে */
+    .content {
+      padding: 280px 20px 60px; /* 280px দিলাম যেন হেডারের নিচে যায় */
+      text-align: center;
+    }
+    
+    .btn {
+      font-family: 'Poppins', sans-serif;
+      display: inline-block;
+      margin: 20px 10px;
+      padding: 12px 25px;
+      background-color: #f1c40f;
+      color: #2c3e50;
+      font-weight: 600;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+    .btn:hover { background-color: #e74c3c; color: #fff; }
+    
+    /* Contact Section */
+    .contact-info {
+      display: none;
+      text-align: center;
+      padding: 20px;
+      background-color: #34495e;
+      border: 2px solid #f1c40f;
+      margin: 20px;
+      border-radius: 10px;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-info a {
+      color: #f1c40f;
+      text-decoration: none;
+    }
+    
+    footer {
+      background-color: #34495e;
+      padding: 20px;
+      text-align: center;
+      border-top: 2px solid #f1c40f;
+    }
+    footer a {
+      margin: 0 10px;
+      color: #f1c40f;
+      font-size: 1.5em;
+      text-decoration: none;
+    }
+    footer a:hover {
+      color: #e74c3c;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header & Banner Section -->
+  <header>
+    <div class="banner">
+      <img src="https://firebasestorage.googleapis.com/v0/b/smm-penel-be4bc.appspot.com/o/image%2F1000039599.jpg?alt=media&token=afeadbc3-4ad6-4954-9bf5-395a978b66d3" alt="Cyber Security Banner" />
+    </div>
+    <!-- Navigation -->
+    <nav>
+      <a href="#home">হোম</a>
+      <a href="#services">সার্ভিস</a>
+      <a href="#about">আমাদের সম্পর্কে</a>
+      <a href="javascript:void(0);" onclick="toggleContact()">যোগাযোগ</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <div class="content" id="home">
+    <h2>স্বাগতম আমাদের সাইবার নিরাপত্তা প্ল্যাটফর্মে</h2>
+    <p>আপনার সিকিউরিটি নিশ্চিত করতে আমরা সবসময় প্রস্তুত।</p>
+  </div>
+
+  <!-- Services Section -->
+  <div class="content" id="services">
+    <h2>আমাদের সার্ভিসসমূহ</h2>
+    <p>সোশ্যাল মিডিয়া নিরাপত্তা, এনক্রিপশন, পেনিট্রেশন টেস্টিং, এবং আরও অনেক কিছু।</p>
+    <a href="http://mostakim.fwh.is/tools/" class="btn">Our Tools</a>
+  </div>
+
+  <!-- About Section -->
+  <div class="content" id="about">
+    <h2>আমাদের সম্পর্কে</h2>
+    <p>আমরা সাইবার সিকিউরিটি ও মুসলিমদের জন্য নিরাপত্তা নিশ্চিত করতে কাজ করছি।</p>
+  </div>
+
+  <!-- Contact Section -->
+  <div class="contact-info" id="contactInfo">
+    <p><strong>Phone:</strong> +8801602528942</p>
+    <p><strong>WhatsApp:</strong> +8801602528942</p>
+    <p><strong>Email:</strong> <a href="mailto:mostakimsultana200@gmail.com">mostakimsultana200@gmail.com</a></p>
+    <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=61560304021215">MOSTAKIM BILLAH</a></p>
+    <p><strong>Telegram:</strong> <a href="https://t.me/hacker7t1publicgroup">Hacker_7T1</a></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div>
+      <a href="tel:+8801602528942"><i class="fas fa-phone"></i></a>
+      <a href="https://wa.me/8801602528942" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="mailto:mostakimsultana200@gmail.com"><i class="fas fa-envelope"></i></a>
+      <a href="https://www.facebook.com/profile.php?id=61560304021215" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://t.me/hacker7t1publicgroup" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+    <p>© Developed by Mostakim Billah</p>
+  </footer>
+
+  <!-- JavaScript for Contact Toggle -->
+  <script>
+    function toggleContact() {
+      var contact = document.getElementById('contactInfo');
+      if (contact.style.display === 'none' || contact.style.display === '') {
+        contact.style.display = 'block';
+      } else {
+        contact.style.display = 'none';
+      }
+    }
+  </script>
+
+</body>
+  </html>
